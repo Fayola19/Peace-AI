@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sleep Analysis</title>
+  <link rel="stylesheet" href="Analysis.css">
+</head>
+<body>
+
+<div class="phone">
+  <div class="analysis-screen page">
+    <div class="particles">
+        <span></span><span></span><span></span>
+    </div>
+    
+    <div class="top-bar">
+      <div class="profile">
+        <div class="avatar">J</div>
+        <span class="name">Jonata</span>
+      </div>
+
+      <a href="Chatbot.html" class="notif-btn">
+        🤖
+      <span class="notif-dot"></span>
+      </a>
+    </div>
+
+    <div class="mode-toggle">
+      <a href="Day Screen.html" class="mode-btn active">☀️</a>
+      <a href="Night Screen.html" class="mode-btn active">🌙</a>
+    </div>
+
+ 
+    <h2 class="title">Sleep Analysis</h2>
+
+    <div class="progress-ring">
+      <svg width="140" height="140">
+        <circle
+          cx="70"
+          cy="70"
+          r="60"
+          stroke="#2a3442"
+          stroke-width="10"
+          fill="none"
+        />
+        <circle
+          cx="70"
+          cy="70"
+          r="60"
+          stroke="#f4a7a7"
+          stroke-width="10"
+          fill="none"
+          stroke-dasharray="377"
+          stroke-dashoffset="60"
+          stroke-linecap="round"
+        />
+      </svg>
+
+      <div class="progress-text">
+        <h3>84%</h3>
+        <p>Quality</p>
+      </div>
+    </div>
+
+    <p class="duration">8h 10m sleep</p>
+
+    <div class="stats">
+      <div class="stat">
+        <span class="icon">😴</span>
+        <div>
+          <p class="label">Deep Sleep</p>
+          <p class="value">2h 26m</p>
+        </div>
+      </div>
+
+      <div class="stat">
+        <span class="icon">🌙</span>
+        <div>
+          <p class="label">Light Sleep</p>
+          <p class="value">1h 07m</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

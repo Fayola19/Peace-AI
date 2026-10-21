@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #111;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone {
+  width: 280px;
+  height: 560px;
+  border-radius: 30px;
+  background: #000;
+  padding: 12px;
+}
+
+.night-screen {
+  height: 100%;
+  border-radius: 24px;
+  background: linear-gradient(180deg, #0b1d2a, #04080f);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.name {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.notif-btn {
+  position: relative;
+  background: rgba(255,255,255,0.12);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+
+
+.notif-btn:active {
+  transform: scale(0.95);
+}
+
+.notif-dot {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 6px;
+  height: 6px;
+  background: #ff6b6b;
+  border-radius: 50%;
+}
+
+.time-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.time-section h1 {
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.alarm {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.moon-container {
+  position: relative;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moon {
+  font-size: 90px;
+  z-index: 2;
+}
+
+.star {
+  position: absolute;
+  color: #ffffff;
+  font-size: 10px;
+  opacity: 0.6;
+}
+
+.s1 { top: 10px; left: 50px; }
+.s2 { top: 40px; right: 40px; }
+.s3 { bottom: 30px; left: 70px; }
+.s4 { bottom: 10px; right: 60px; }
+
+.goodnight {
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.swipe-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  border-radius: 24px;
+  padding: 12px 16px;
+  color: white;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+
+  transition: all 0.2s ease;
+}
+
+.swipe-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.swipe-btn:active {
+  transform: translateY(2px);
+}
+
+.swipe-btn .arrow {
+  font-size: 22px;
+  line-height: 1;
+  opacity: 0.8;
+}
+
+.swipe-btn .text {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+/* Page transition */
+.page {
+  animation: fadeIn 0.35s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

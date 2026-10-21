@@ -1,0 +1,192 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background: #111;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Phone frame */
+.phone {
+  width: 280px;
+  height: 560px;
+  background: #000;
+  border-radius: 30px;
+  padding: 12px;
+}
+
+.day-screen {
+  height: 100%;
+  border-radius: 24px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  
+  /* Sky gradient */
+  background: linear-gradient(
+    180deg,
+    #a8d8ff 0%,
+    #d9f0ff 45%,
+    #ffffff 100%
+  );
+
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cloud {
+  position: absolute;
+  width: 80px;
+  height: 24px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 20px;
+  filter: blur(4px);
+}
+
+.c1 {
+  top: 90px;
+  left: 30px;
+}
+
+.c2 {
+  top: 140px;
+  right: 40px;
+}
+
+
+/* Top bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Profile */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  background: rgba(0,0,0,0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.name {
+  font-size: 14px;
+}
+
+/* Notification */
+.notif-btn {
+  position: relative;
+  background: rgba(255,255,255,0.12);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+
+
+.notif-dot {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 6px;
+  height: 6px;
+  background: red;
+  border-radius: 50%;
+}
+
+.day-greeting h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.day-greeting p {
+  font-size: 14px;
+  color: #666;
+}
+
+.sun-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+}
+
+.sun {
+  font-size: 90px;
+  filter: drop-shadow(0 0 25px rgba(255, 200, 0, 0.6));
+}
+
+.swipe-btn {
+  background: rgba(0, 0, 0, 0.06);
+  border: none;
+  border-radius: 24px;
+  padding: 12px;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swipe-btn .text {
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.time-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.time-section h1 {
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.screen-wrapper {
+  animation: fade 0.4s ease;
+}
+
+.page {
+  animation: fadeIn 0.35s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

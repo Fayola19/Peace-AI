@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 40px;
+}
+
+.card {
+    width: 360px;
+    padding: 32px 28px;
+    border-radius: 28px;
+    color: white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.signup {
+    background: linear-gradient(
+        180deg,
+        #e7b6a6 0%,
+        #8b7a86 50%,
+        #2e3d57 100%
+    );
+}
+
+.login {
+    background: linear-gradient(180deg, #3f5c64, #e7b6a6);
+}
+
+.signup {
+    background: linear-gradient(180deg, #d6a7a0, #2e3d57);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.logo img {
+    width: 32px;
+    height: 32px;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+p {
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.forgot {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.primary {
+    background: #6b5c8c;
+    color: white;
+}
+
+.secondary {
+    background: #243b5a;
+    color: white;
+}
+
+.divider {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 12px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social button {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    border: none;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.social button img {
+    width: 26px;     
+    height: 26px;
+    object-fit: contain;
+}
+
+.switch {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.switch span {
+    font-weight: bold;
+    cursor: pointer;
+}
